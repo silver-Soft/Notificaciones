@@ -1,0 +1,24 @@
+.actions{
+    display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+        row-gap: 10px;
+        justify-content: center;
+        align-items: center;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    row-gap: 20px;
+    flex-direction: column;
+}
+@media (max-width: 761px) {
+    .actions{
+        display: flex;
+            justify-content: right;
+            align-items: center;
+            padding: 0px;
+            margin: 0px;
+    }
+}

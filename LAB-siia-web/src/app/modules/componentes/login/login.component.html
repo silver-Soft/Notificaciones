@@ -1,0 +1,80 @@
+<div class="log">
+    <div style="display: flex; justify-content: center; width: 100%; align-items: center; flex-direction: column">
+        <a href="#" style="justify-content: center;">
+            ¿Olvidaste tu contraseña?   
+        </a>
+        <br>
+        <a style="justify-content: center; cursor: pointer;" (click)="openAvisoDatosPersonalesDialog()">
+            Aviso de datos personales   
+        </a>
+        <br>
+        <a target="#" rel="noopener noreferrer" href="#" (click)="chat()">
+            <img style="height: 150px" src="https://uatx.mx/siia/home/SIIA_CHAT_BOT.gif" alt="ChatBoot">
+        </a>            
+    </div>   
+    <div>
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>Inicio de sesión</mat-card-title>
+            </mat-card-header>
+            <form [formGroup]="datosLogueoFormGroup" (ngSubmit)="formSubmit()"> 
+                <mat-card-content class="logContainer">
+                    <mat-form-field appearance="outline" style="width: 100%;">
+                        <mat-label>Usuario</mat-label>
+                        <input matInput maxlength="30"
+                        formControlName="usuario"
+                        placeholder="Ingresa tu usuario*"
+                        >
+                        <mat-error *ngIf="revisarError(datosLogueoFormGroup,'usuario', 'required')">Ingresa tu usuario</mat-error>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" style="width: 100%;">
+                        <mat-label>Contraseña</mat-label>
+                        <input matInput [type]="hide ? 'password' : 'text'"
+                        matInput maxlength="15"
+                        formControlName="contrasena"
+                        placeholder="Contraseña*">
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide" type="button">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                        <mat-error *ngIf="revisarError(datosLogueoFormGroup,'contrasena', 'required')">Ingresa tu contraseña</mat-error>
+                    </mat-form-field>
+                </mat-card-content>
+                <mat-card-actions align="end">
+                    <button 
+                        mat-raised-button color="primary" 
+                        type="submit"
+                        matTooltip="Iniciar sesion"
+                        matTooltipPosition="above">
+                        Iniciar sesion
+                    </button>
+                </mat-card-actions>  
+            </form>
+            <a href="https://siia5.uatx.mx:8743/siia-aspirantes/#/login" style="float: right;">
+                Si eres aspirante, ingresa aquí   
+            </a>
+            <br><br>
+            
+        </mat-card>
+        <div class="store-buttons">
+            <a href="https://apps.apple.com/us/app/siiamovil/id1535504629" target="blank" class="button-store">
+                <img style="height: 50px;" 
+                    src="https://uatx.mx/siia/home/AppStore.png" 
+                    alt="Descarga para IOS" 
+                    title="SIIA App Store"
+                >
+            </a> 
+            <a href="https://play.google.com/store/apps/details?id=app.siiamovil.aplicacionfinal" target="blank" class="button-store">
+                <img style="height: 50px;" 
+                    src="https://uatx.mx/siia/home/googlePlay.png" 
+                    alt="Descarga para Android" 
+                    title="SIIA Google Play"
+                >
+            </a>       
+        </div>
+    </div>  
+    <div style="width: 100%; display: flex; justify-content: center">
+        <div style="width: 80%;">
+            <img style="width: 100%; border-radius: 20px" src="https://uatx.mx/siia/Login.png" alt="Imagen Login">
+        </div>        
+    </div>   
+</div>

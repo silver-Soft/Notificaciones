@@ -1,0 +1,28 @@
+<div>
+    <mat-card style="height: 50px;background-color: #750a2c; width: 100%; display: flex; justify-content: center; align-items: center; border-top-left-radius: 10px;
+    border-top-right-radius: 10px;">
+        <mat-card-title style="font-size: 1.5rem; color: white; text-align: center">{{data.titulo}}</mat-card-title>
+    </mat-card> 
+    <mat-card-content style="display: block; margin-bottom: 16px; background-color: white; border-radius: 10px;">
+        <div class="dialogPersonalData">
+            <p style="text-align: center;">
+                La información contenida en esta base de datos es confidencial, por lo que se cuenta con las medidas de seguridad necesarias para el tratamiento de datos en términos del artículo 22 de la ley de Protección de Datos Personales en Posesión de Sujetos Obligados para el Estado de Tlaxcala.                
+            </p>           
+            <p style="text-align: center;">
+                El mal uso, difusión, reproducción o distribución indebidos de la información contenida, quedan estrictamente prohibidos, en caso de incumplimiento podrá ser sujeto de responsabilidad en términos de lo dispuesto por los artículos 63, 64 y 66 de la Ley Federal de Protección de Datos Personales en Posesión de Particulares y 316, 317, 318, 319 7 320 del Código Penal del Estado de Tlaxcala.                
+            </p>
+            <p style="text-align: center;">
+                ¡NO COMPARTAS TUS DATOS DE ACCESO, CON NADIE!
+            </p>
+        </div>        
+    </mat-card-content>
+      <div style="text-align: right">
+        <button style="height: fit-content; margin-left:10px"
+            mat-raised-button color="primary" 
+            type="button"
+            matTooltip="Cerrar"
+            matTooltipPosition="above" 
+            mat-button (click)="onNoClick()">Cerrar
+        </button>
+      </div>      
+    </div>

@@ -1,0 +1,84 @@
+<mat-card *ngIf="showMessages else elseBlock" class="card-margin">
+    <div class="contenedor">
+        <mat-card class="aviso">
+            <mat-card-title>
+                Tareas pendientes
+            </mat-card-title>
+            <mat-accordion *ngFor="let msg of lstMensajesValidacion">
+                <mat-expansion-panel (opened)="panelOpenState = true"
+                                    [expanded]="true" 
+                                    style="margin-bottom: 10px;"
+                                   (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    {{msg.strTitulo}}
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="grid-block">
+                    <p>
+                        {{this.stripHtml(msg.mensaje)}}
+                    </p>
+                    <div class="btn-container">
+                        <button class="ingresar" mat-raised-button color="primary"
+                        type="button" matTooltip="Ingresar" matTooltipPosition="above" 
+                        (click)="openNewTab('https://siia.uatx.mx:8743/SIIA/')">
+                        <mat-icon>input</mat-icon>
+                    </button>    
+                    </div>                                                  
+                </div>
+            </mat-expansion-panel>
+            </mat-accordion>
+        </mat-card>
+    </div>
+</mat-card>
+<ng-template #elseBlock>
+    <mat-card style="padding: 0px;"
+        (mouseenter)="onMouseEnter()">
+        <div class="carteles-container">
+            <div *ngFor="let item of items">
+                <div style="display: flex; justify-content: center;">
+                    <div class="image-container">
+                        <img [src]="item?.img" alt="Imagen 1" class="imagenes">
+                    </div> 
+                </div>
+                               
+                <div class="enlaces">
+                    <div style="width: 100%;">
+                        <p class="normal">
+                            Ingresa a:
+                        </p>
+        
+                        <a href="{{item?.proveedorUrl}}">
+                            <p class="enfasis" style="user-select: text;">
+                                {{item?.proveedorUrl}}
+                            </p>
+                        </a>
+        
+                        <p class="normal">
+                            con tu correo:
+                        </p>
+                        <p class="enfasis" style="user-select: text;">
+                            {{item?.correo}}
+                        </p>
+                        <p class="normal">
+                            y tu misma contraseña del SIIA
+                        </p>
+                    </div>                    
+                </div>
+            </div>
+            <div style="grid-column: 1 / 3; margin-top: 30px;">
+                <div *ngIf="permiteAyuda" style="display: flex; justify-content: center;">
+                    <img src="https://siiadsyti.uatx.mx:8743/SIIA/resources/imagenes/aviso_mesa_ayuda.png" alt="Imagen 1" 
+                    (click)="mesaDeAyuda()"
+                    class="ayuda">
+                </div> 
+            </div>
+        </div>
+        <canvas id="canvas"></canvas>
+        <div class="ventana-lateral" style="top: 15%;" id="tarjeta"
+            (click)="lanzarConfetti()">
+            <img class="aviso-lateral" src="https://uatx.mx/siia/cumpleaniosSIIA.png" alt="Felicidades" style="right: 0px;">
+        </div>
+    </mat-card>
+</ng-template>
+

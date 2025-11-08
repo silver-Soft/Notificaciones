@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.siiamovil.aplicacionfinal.fcm_siia.FcmSiiaApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.829 s -- in com.siiamovil.aplicacionfinal.fcm_siia.FcmSiiaApplicationTests

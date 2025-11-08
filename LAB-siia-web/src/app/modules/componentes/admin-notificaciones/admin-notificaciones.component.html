@@ -1,0 +1,71 @@
+<mat-card class="card-margin">
+    <mat-card class="card-margin" style="padding:0px;">
+        <p class="titulo_contenido">Enviar notificaciones al SIIA Móvil</p>
+    </mat-card>
+    <mat-card class="card-margin">
+        <mat-card-title>Crear notificación</mat-card-title>
+        <form [formGroup]="nuevaNotificacionFormGroup" (ngSubmit)="enviarNotificacion()" class="form-container">
+            <div style="margin: 20px 0; display: flex; align-items: center;">
+                <mat-slide-toggle formControlName="notificacionGlobal">
+                    ¿Es una notificación para toda la comunidad estudiantil?
+                </mat-slide-toggle>
+            </div>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Título de la notificación</mat-label>
+                <input matInput placeholder="Ingrese el título de la notificación" formControlName="messageTitle"
+                    type="text">
+                <mat-error *ngIf="nuevaNotificacionFormGroup.get('messageTitle')!.hasError('required')">
+                    El título es requerido
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Mensaje de la notificación</mat-label>
+                <textarea matInput placeholder="Ingrese el mensaje de la notificación" formControlName="messageBody">
+                        </textarea>
+                <mat-error *ngIf="nuevaNotificacionFormGroup.get('messageBody')!.hasError('required')">
+                    El mensaje es requerido
+                </mat-error>
+            </mat-form-field>
+
+            <div style="margin: 20px 0; display: flex; align-items: center;">
+                <mat-slide-toggle formControlName="notificacionIndividual">
+                    ¿Es una notificación individual?
+                </mat-slide-toggle>
+            </div>
+
+            <mat-form-field appearance="outline" *ngIf="nuevaNotificacionFormGroup.get('notificacionIndividual')!.value">
+                <mat-label>Alumno objetivo</mat-label>
+                <mat-select formControlName="targetToken">
+                    <mat-option [value]="alumno.targetToken" *ngFor="let alumno of alumnos">
+                        {{ alumno.nombreCompleto }}
+                    </mat-option>
+                </mat-select>
+                <mat-error *ngIf="nuevaNotificacionFormGroup.get('messageBody')!.hasError('required')">
+                    Seleccione un alumno.
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" *ngIf="!nuevaNotificacionFormGroup.get('notificacionIndividual')!.value">
+                <mat-label>Grupo objetivo</mat-label>
+                <mat-select formControlName="targetTopic">
+                    <mat-option [value]="topic.targetTopic" *ngFor="let topic of topics">
+                        {{ topic.topic }}
+                    </mat-option>
+                </mat-select>
+                <mat-error *ngIf="nuevaNotificacionFormGroup.get('messageBody')!.hasError('required')">
+                    Seleccione un grupo destino para esta notificación.
+                </mat-error>
+            </mat-form-field>
+
+
+            <mat-card-actions class="actions">
+                <button mat-raised-button color="primary" type="submit" matTooltip="Buscar" matTooltipPosition="above">
+                    Enviar <mat-icon>send</mat-icon>
+                </button>
+            </mat-card-actions>
+        </form>
+    </mat-card>
+
+</mat-card>

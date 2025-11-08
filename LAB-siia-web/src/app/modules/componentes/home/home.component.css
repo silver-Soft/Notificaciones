@@ -1,0 +1,176 @@
+.contenedor{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aviso{
+    width: 50%;
+}
+
+.grid-block{
+    display: grid; 
+    grid-template-columns: 1fr 8%;
+    padding: 10px;
+}
+
+.ingresar{
+    height: fit-content; 
+    margin-left:10px
+}
+
+.btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.normal{
+    margin: 5px;
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    margin: 5px;
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    margin: 5px;
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+}
+
+.enfasis {
+    margin: 5px;
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+    color: #A23234;
+    margin: 5px;
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+    color: #A23234;
+}
+
+.enlaces {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.ventana-lateral{
+    width: 4rem;
+    height:15rem;
+    margin-top: 0rem;
+    position: fixed;
+    left: -33rem;
+    transition: all .7s;   
+}
+
+.aviso-lateral{
+    height: 10rem;
+    background-repeat: no-repeat;    
+    background-position: center;       
+    cursor:pointer;     
+}
+
+.mostrado {
+    transform: translateX(33rem); 
+}
+
+canvas#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    pointer-events: none;  
+}
+
+.carteles-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    width: 100%;        
+}
+.ayuda{
+    width: 25%;
+    height: auto;
+    cursor: pointer;
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imagenes{
+    width: 100%; 
+    height: auto;
+    box-shadow: 0px 10px 10px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+}
+@media (max-width: 884px) {
+    .aviso{
+        width: 100%;
+    }
+
+    .aviso-lateral{
+        background-repeat: no-repeat;    
+        background-position: center;       
+        cursor:pointer; 
+        width: 50%;
+        height: auto;    
+    }
+
+    .ventana-lateral{
+        width: auto;   
+    }
+
+    .grid-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;         
+    }
+    .ingresar{
+        height: fit-content; 
+        margin-left: 0px
+    }
+    .btn-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .carteles-container{
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .ayuda{
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+    .image-container{
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .imagenes{
+        width: 100%; 
+        height: auto;
+    }
+}

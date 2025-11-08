@@ -1,0 +1,615 @@
+{
+    "template": {
+        "header":{
+            "iniciarSesion" : "Iniciar sesión",
+            "elegirIdioma" : "Idioma",
+            "idiomaEspañol" : "Español",
+            "idiomaIngles" : "Inglés",
+            "inicio":"Inicio",
+            "salir" : "Salir"
+        },
+        "footer":{
+            "copyright" : "©2003-2022",
+            "siia" : "Sistema Integral de informacíon Administrativa",
+            "version" : "5.0",
+            "universidad" : "Universidad Autonoma de Tlaxcala ",
+            "sistemas" : "Departamento de Sistemas y Tecnologías de información"
+        },
+        "notificaciones":{
+            "usuarioLogueado" : "¡El usuario ya se encuentra logueado!",
+            "error":{
+                "comunicacion" : "No hay comunicación",
+                "solicitudErronea" : "Solicitud errónea",
+                "solicitudNoAutorizada" : "Solicitud no autorizada",
+                "intentaloMasTarde" : "ha ocurrido un error, vuelva a intentarlo más tarde"
+            }
+        }
+    },
+    "login":{
+        "login" : "Iniciar sesión",
+        "user" : "Usuario",
+        "password" : "Contraseña",
+        "button" : "Iniciar Sesión"
+    },
+    "service":{
+        "error" : "Datos incorrectos",
+        "notauthorized" : "No autorizado",
+        "nocomunication" : "No hay comunicación"
+    },
+    "aspirantes": {
+        "registro": {
+            "tituloPrincipal" : "Registro de aspirantes",
+            "stepperLabel1" : "Datos de aspirante",
+            "QueCarreraEstudiar" : "¿Qué carrera te gustaría estudiar?",
+            "primerOpcion":{
+                "label" : "Primera opción",
+                "placeholder" : "Elige tu primera opción",
+                "requiredError" : "El campo primera opción es requerido"
+            },
+            "segundaOpcion":{
+                "label" : "Segunda opción",
+                "placeholder" : "Elige tu segunda opción",
+                "requiredError" : "El campo segunda opción es requerido"
+            },
+            "carreraElegida":{
+                "label" : "¿Qué carrera te gustaría estudiar de las que no existen en la institución?",
+                "placeholder" : "Ingresa la carrera"
+            },
+            "aspiranteNombre":{
+                "label" : "Nombre",
+                "placeholder" : "Ingresa tu nombre",
+                "requiredError" : "El campo nombre es requerido"
+            },
+            "aspiranteApPaterno":{
+                "label" : "Apellido paterno",
+                "placeholder" : "Ingresa tu apellido paterno",
+                "requiredError" : "El campo apellido paterno es requerido"
+            },
+            "aspiranteApMaterno":{
+                "label" : "Apellido materno",
+                "placeholder" : "Ingresa tu apellido materno",
+                "requiredError" : "El campo apellido materno es requerido"
+            },
+            "aspiranteFechaNac":{
+                "label" : "Fecha de nacimiento",
+                "requiredError" : "El campo fecha de nacimiento es requerido"
+            },
+            "aspiranteGenero":{
+                "label" : "Genero",
+                "placeholder" : "Elige tu genero",
+                "requiredError" : "El campo genero es requerido"
+            },
+            "aspiranteEstadoCivil":{
+                "label" : "Estado civil",
+                "placeholder" : "Elige tu estado civil",
+                "requiredError" : "El campo estado civil es requerido"
+            },
+            "aspiranteNacionalidad":{
+                "label" : "Nacionalidad",
+                "placeholder" : "Elige tu nacionalidad",
+                "requiredError" : "El campo nacionalidad es requerido"
+            },
+            "aspiranteEstadoNacimiento":{
+                "label" : "Estado de nacimiento",
+                "placeholder" : "Elige tu estado nacimiento",
+                "requiredError" : "El campo estado de nacimiento es requerido"
+            },
+            "aspiranteCURP":{
+                "label" : "CURP",
+                "placeholder" : "Ingresa tu CURP",
+                "requiredError" : "El campo CURP es requerido",
+                "patternError" : "Ingresa un CURP valido"
+            },
+            "aspiranteLenguas":{
+                "label" : "¿Hablas alguna lengua indigena?",
+                "placeholder" : "Elige lengua indigena",
+                "requiredError" : "El campo lengua indigena es requerido"
+            },
+            "aspiranteBeneficiario":{
+                "label" : "¿Eres beneficiario Prospera?",
+                "placeholder" : "Elige una opción",
+                "requiredError" : "El campo es requerido"
+            },
+            "aspiranteProsperaFolio":{
+                "label" : "Folio Prospera",
+                "placeholder" : "Ingresa folio prospera",
+                "requiredError" : "El campo prospera folio es requerido"
+            },
+            "stepperLabel2" : "En tu vida diaria ¿Te has enfrentado con?",
+            "dificultadMoverse":{
+                "label" : "¿Dificultad para caminar, moverte, subir o bajar?",
+                "placeholder" : "Elige una opción",
+                "requiredError" : "El campo es requerido"
+            },
+            "dificultadVer":{
+                "label" : "¿Dificultad para ver, aún usando lentes",
+                "placeholder" : "Elige una opción",
+                "requiredError" : "El campo es requerido"
+            },
+            "dificultadHablar":{
+                "label" : "¿Dificultad para hablar, comunicarte o conversar?",
+                "placeholder" : "Elige una opción",
+                "requiredError" : "El campo es requerido"
+            },
+            "dificultadOir":{
+                "label" : "¿Dificultad para oir, aún usando aparato auditivo?",
+                "placeholder" : "Elige una opción",
+                "requiredError" : "El campo es requerido"
+            },
+            "dificultadVestirse":{
+                "label" : "¿Dificultad para vestirte, bañarte o comer?",
+                "placeholder" : "Elige una opción",
+                "requiredError" : "El campo es requerido"
+            },
+            "dificultadAprender":{
+                "label" : "¿Dificultad para poner atencion o aprender cosas sencillas?",
+                "placeholder" : "Elige una opción",
+                "requiredError" : "El campo es requerido"
+            },
+            "utilizarBaston":{
+                "label" : "¿Tienes la necesidad de utilizar bastón, andadera o silla de ruedas?",
+                "placeholder" : "Elige una opción",
+                "requiredError" : "El campo es requerido"
+            },
+            "UltimamenteEnfrentadoSituaciones": "Ultimamente ¿Te enfrentas a las siguientes situaciones?",   
+            "situacionMiedo":{
+                "label" : "¿Miedo?",
+                "placeholder" : "Elige una opción",
+                "requiredError" : "El campo es requerido"
+            },
+            "situacionAngustia":{
+                "label" : "¿Angustia?",
+                "placeholder" : "Elige una opción",
+                "requiredError" : "El campo es requerido"
+            },
+            "situacionTristeza":{
+                "label" : "¿Tristeza?",
+                "placeholder" : "Elige una opción",
+                "requiredError" : "El campo es requerido"
+            },
+            "situacionSoledad":{
+                "label" : "¿Soledad?",
+                "placeholder" : "Elige una opción",
+                "requiredError" : "El campo es requerido"
+            },
+            "situacionEnfado":{
+                "label" : "¿Enfado?",
+                "placeholder" : "Elige una opción",
+                "requiredError" : "El campo es requerido"
+            },
+            "situacionDisgusto":{
+                "label" : "¿Te disgusta cualquier cosa?",
+                "placeholder" : "Elige una opción",
+                "requiredError" : "El campo es requerido"
+            },
+            "situacionInfeliz":{
+                "label" : "¿Te sientes infeliz?",
+                "placeholder" : "Elige una opción",
+                "requiredError" : "El campo es requerido"
+            },
+            "situacionFrustrado":{
+                "label" : "¿Te sientes frustrado?",
+                "placeholder" : "Elige una opción",
+                "requiredError" : "El campo es requerido"
+            },
+            "stepperLabel3" : "Datos de localización",
+            "aspiranteLocCalle":{
+                "label" : "Calle",
+                "placeholder" : "Ingresa calle",
+                "requiredError" : "El campo calle es requerido"
+            },
+            "aspiranteLocNumero":{
+                "label" : "Numero",
+                "placeholder" : "Ingresa el numero de la calle",
+                "requiredError" : "El campo numero de la calle es requerido"
+            },
+            "aspiranteLocEstado":{
+                "label" : "Estado",
+                "placeholder" : "Elige estado",
+                "requiredError" : "El campo estado es requerido"
+            },
+            "aspiranteLocMunicipio":{
+                "label" : "Municipio",
+                "placeholder" : "Elige municipio",
+                "requiredError" : "El campo municipio es requerido"
+            },
+            "aspiranteLocLocalidad":{
+                "label" : "Localidad",
+                "placeholder" : "Elige localidad",
+                "requiredError" : "El campo localidad es requerido"
+            },
+            "aspiranteTelefono":{
+                "label" : "Número de Teléfono",
+                "placeholder" : "Ingresa teléfono",
+                "hint" : "Ingresa numero a 10 digitos ",
+                "patternError" : "ingresa un teléfono valido",
+                "requiredError" : "El campo teléfono es requerido"
+            },
+            "correoBox": " Ingresa tu correo electrónico personal, el que usas con frecuencia y verifica que este escrito correctamente, porque es el medio de comunicación y contacto contigo",
+            "mensajePromedio":"Para poder registrarte, contestar el cuadernillo de contexto (ficha) y presentarte al examen de admisión; tu promedio debe coincidir desde este registro",
+            "aspiranteCorreo":{
+                "label" : "Ingresa correo electrónico",
+                "placeholder" : "Ingresa correo electrónico",
+                "requiredError" : "El campo correo electrónico es requerido",
+                "emailError" : "El campo correo electrónico es requerido"
+            },
+            "escuelaProcedenciaTitulo":"Escuela de procedencia",
+            "escuelaEstado":{
+                "label" : "Estado de la escuela",
+                "placeholder" : "Elige estado de la escuela",
+                "requiredError" : "El campo estado de escuela es requerido"
+            },
+            "escuelaProcedencia":{
+                "label" : "Escuela procedencia",
+                "placeholder" : "Elige escuela de procendecia",
+                "requiredError" : "El campo escuela procedencia es requerido"
+            },
+            "aspirantePromedio":{
+                "label" : "Promedio general",
+                "placeholder" : "Ingresa promedio general",
+                "requiredError" : "El campo promedio general es requerido",
+                "patternError" : "El campo solo acepta números",
+                "maxError" : "El promedio no puede ser mayor a 10"
+            },
+            "aspiranteEspecialidad":{
+                "label" : "Especialidad",
+                "placeholder" : "Ingresa especialidad",
+                "requiredError" : "El campo especialidad es requerido"
+            },
+            "stepperLabel4" : "Datos de los padres y/o tutor",
+            "datosPadreTitulo" : "Datos del padre",
+            "padreNombre":{
+                "label" : "Nombre",
+                "placeholder" : "Ingresa nombre del padre",
+                "requiredError" : "El campo es requerido"
+            },
+            "padreApPaterno":{
+                "label" : "Apellido Paterno",
+                "placeholder" : "Ingresa apellido paterno del padre",
+                "requiredError" : "El campo es requerido"
+            },
+            "padreApMaterno":{
+                "label" : "Apellido Materno",
+                "placeholder" : "Ingresa apellido materno del padre",
+                "requiredError" : "El campo es requerido"
+            },
+            "datosMadreTitulo" : "Datos de la madre",
+            "madreNombre":{
+                "label" : "Nombre",
+                "placeholder" : "Ingresa nombre de la madre",
+                "requiredError" : "El campo es requerido"
+            },
+            "madreApPaterno":{
+                "label" : "Apellido Paterno",
+                "placeholder" : "Ingresa apellido paterno de la madre",
+                "requiredError" : "El campo es requerido"
+            },
+            "madreApMaterno":{
+                "label" : "Apellido Materno",
+                "placeholder" : "Ingresa apellido materno de la madre",
+                "requiredError" : "El campo es requerido"
+            },
+            "domicilioTutorTitulo" : "Domicilio del tutor",
+            "mismoDomicilioBoton" : "Mismo Domicilio",
+            "aspiranteTutor":{
+                "label" : "¿Quien es tu tutor?",
+                "placeholder" : "Elige tutor",
+                "requiredError" : "El campo tutor es requerido"
+            },
+            "tutorNombre":{
+                "label" : "Nombre",
+                "placeholder" : "Ingresa nombre del tutor",
+                "requiredError" : "El campo es requerido"
+            },
+            "tutorApPaterno":{
+                "label" : "Apellido Paterno",
+                "placeholder" : "Ingresa apellido paterno del tutor",
+                "requiredError" : "El campo es requerido"
+            },
+            "tutorApMaterno":{
+                "label" : "Apellido Materno",
+                "placeholder" : "Ingresa apellido materno del tutor",
+                "requiredError" : "El campo es requerido"
+            },
+            "tutorCalle":{
+                "label" : "Calle",
+                "placeholder" : "Ingresa calle",
+                "requiredError" : "El campo calle es requerido"
+            },
+            "tutorCalleNumero":{
+                "label" : "Numero",
+                "placeholder" : "Ingresa numero de la calle",
+                "requiredError" : "El campo numero es requerido"
+            },
+            "tutorEstado":{
+                "label" : "Estado",
+                "placeholder" : "Elige estado",
+                "requiredError" : "El campo estado es requerido"
+            },
+            "tutorMunicipio":{
+                "label" : "Municipio",
+                "placeholder" : "Elige municipio",
+                "requiredError" : "El campo municipio es requerido"
+            },
+            "tutorLocalidad":{
+                "label" : "Localidad",
+                "placeholder" : "Elige Localidad",
+                "requiredError" : "El campo localidad es requerido"
+            },
+            "tutorTelefono":{
+                "label" : "Número de Teléfono",
+                "placeholder" : "Ingresa teléfono",
+                "hint" : "Ingresa numero a 10 digitos ",
+                "patternError" : "ingresa un teléfono valido",
+                "requiredError" : "El campo teléfono es requerido"
+            },
+            "tutorCorreo":{
+                "label" : "Ingresa correo electrónico",
+                "placeholder" : "Ingresa correo electrónico",
+                "emailError" : "El campo correo electrónico es requerido"
+            },
+            "cualquierProblemaTitulo" : "Cualquier problema con el registro favor de comunicarse con el Departamento de Orientacion Educativa al correo electrónico: orientaspirantes@uatx.mx o al orientaspirantes1@uatx.mx",
+            "convocatoriaCerradaTitulo" : "Convocatoria Cerrada",
+            "convocatoriaCerrada" : "Lo sentimos, por el momento no hay ninguna convocatoria activa para registro de aspirantes. Te pedimos consultes la página de la Universidad https://www.uatx.mx, para más información.",
+            "formularioRegistroGuardarBoton" : "Guardar",
+            "formularioRegistrocancelarBoton" : "Cancelar",
+            "siguienteBoton" : "Siguiente",
+            "anteriorBoton" : "Anterior",
+            "registroCompletoDialog":{
+                "correoEnviadoTitulo" : "Te hemos enviado un correo electrónico a la dirección que nos proporcionaste. Revisa incluso en correo no deseado o spam",
+                "nombreTexto" : "Nombre: ",
+                "primerOpcionTexto" : "Primer opción: ",
+                "segundaOpcionTexto" : "Segunda opción: ",
+                "curpTexto" : "CURP: ",
+                "folioTexto" : "Folio UATX: ",
+                "contraseñaTexto" : "Contraseña: ",
+                "aceptarBoton" : "Aceptar"
+            }
+        },
+        "logueo":{
+            "tituloPrincipal" : "Aspirantes",
+            "folioUATx":{
+                "label" : "Folio UATx",
+                "placeholder" : "Ingresa tu folio UATx",
+                "requiredError" : "El campo folio UATx es requerido"
+            },
+            "contraseña":{
+                "label" : "Contraseña",
+                "placeholder" : "Ingresa tu contraseña",
+                "requiredError" : "El campo contraseña es requerido"
+            },
+            "iniciarSesionBoton" : "Iniciar sesión",
+            "iniciarSesionBotonTooltip" : "Inicia sesión en el sistema con los datos ingresados",
+            "noAspiranteMensaje" : "Si no eres aspirante, ingresa aquí",
+            "dialog" : { 
+                "titulo" : "Acceso al SIIA",
+                "subtituloCualFolio" : "¿Cúal es mi folio UATx y contraseña?",
+                "textoCual" : "El folio UATx y contraseña se encuentran en tu comprobante de registro al SIIA.",
+                "subtituloOlvidasteFolio" : "¿Olvidaste tu folio UATx y contraseña?",
+                "textoOlvidaste" : "Dirigete al departamento de orientación educativa, en el campus Rectoría para que te lo proporcionen.",
+                "botonCerrar" : "Cerrar"
+            }
+        },
+        "inicio":{
+            "titulo" : "Aspirantes",
+            "tituloSIIA" : "1. Registro al SIIA",
+            "reimprimiComprobanteSIIA": "Imprimir comprobante de registro al SIIA",
+            "reimprimiComprobanteSIIATooltip": "Imprime comprobante de registro al SIIA",
+            "tituloSOV" : "2. Sistema de Orientación Vocacional (SOV)",
+            "reimprimiComprobanteSOV": "Imprimir comprobante SOV",
+            "reimprimiComprobanteSOVTooltip": "Imprime comprobante SOV",
+            "contestarSOV": "Contestar instrumento SOV",
+            "contestarSOVTooltip": "Contestar SOV",
+            "tituloFicha" : "3. Solicitud de ficha",
+            "SolicitudFicha" : "Solicitud de ficha",
+            "SolicitudFichaTooltip" : "Solicitud de ficha",
+            "imprimirGuia" : "Imprimir guía de estudios",
+            "imprimirGuiaTooltip" : "Imprimir guía de estudios",
+            "tituloExamen" : "4. Examen de admisión",
+            "realizarExamen" : "Realizar examen",
+            "realizarExamenTooltip" : "Realizar examen",
+            "avanceExamen" : "Consultar avance examen",
+            "avanceExamenTooltip" : "Consultar avance examen"
+        },
+        "contestarSOV":{
+            "tituloPrincipal" : "INSTRUMENTO DE PREFERENCIAS VOCACIONALES",
+            "tituloSOVCompletado" : "Resultados SOV",
+            "instruccionesSOV" : "Instrucciones:",
+            "intruccionesTexto" : "A continuación encontrarás doce secciones. En cada una de estas doce secciones hay una serie de actividades, reunidas en grupos de tres. Lee primero las tres actividades que forman cada grupo, luego decide cuál de las tres te gusta más y selecciona la opción con el signo más(+). Luego decide cuál de las tres actividades te gusta menos y seleccione la opción con el signo menos(-). Solo tienes que elegir dos de tres respuestas, una más(+) y una menos(-).",
+            "enHora" : "¡En hora buena!",
+            "aspiranteNombre" : "Nombre:",
+            "aspiranteFolio" : "Folio UATx: ",
+            "aspiranteOpcion" : "Primer opción: ",
+            "guardarBoton" : "Guardar",
+            "cancelarBoton" : "Regresar",
+            "regresarBoton" : "Regresar",
+            "imprimirSOVBoton" : "Imprimir comprobante",
+            "ContestarSOVDialog" : {
+                "titulo" : "Acceso al SIIA",
+                "subtitulo" : "INSTRUCCIONES PARA CONTESTAR EL CUESTIONARIO",
+                "parrafo" : "Este formulario tiene por objeto ayudarle a descubrir sus preferencias vocacionales. No se trata de un examen; aquí no hay respuestas exactas o inexactas. Toda respuesta que refleje fielmente su modo de pensar es una buena respuesta. A continuación encontrará usted doce secciones. En cada una de estas doce secciones hay una serie de actividades, reunidas en grupos de tres. Lea primero las tres actividades que forman cada grupo, luego decida cuál de las tres le gusta más y seleccione la opción con el signo más. Luego decida cuál de las tres actividades le gusta menos y seleccione la opción con el signo menos.",
+                "parrafo2" : "En el ejemplo que aparece a continuación, la persona que contesta el formulario, indica en el primer grupo de tres actividades, que le gustaba más visitar un museo y en cambio, le gustaba menos hojear libros y revistas en una librería. Por consiguiente, seleccciono el círculo que está a la izquierda de la opción 3 y el círculo que está a la derecha de la opción 2, respectivamente. En el segundo grupo de tres actividades la misma persona indica que le gustaba más coleccionar autógrafos y menos coleccionar mariposas. Por consiguiente, perforó el círculo a la izquierda de la opción 4, y el cáculo a la derecha de la opción 6.",
+                "lista" : "Visitar una galería de arte",
+                "lista2" : "Hojear libros y revistas en una librería",
+                "lista3" : "Visitar un museo",
+                "parrafo3" : "Algunas de las actividades que figuran en este formulario requieren un previo estudio y entrenamiento; aunque Ud. no los posea considere que tiene ya la preparación necesaria para ejercer dicha actividad. No escoja una actividad solamente porque es nueva o rara, escoja lo que le gustaría hacer si usted estuviese familiarizado con cada una de las actividades del grupo. En algunos casos le quedará un poco difícil decidir qué actividad le gusta más, porque las tres le parecerán igualmente agradables o desagradables. Sin embargo, es indispensable que usted escoja entre ellas la que le gustaría más y la que le gustarí¬a menos. Tal vez algunas de las actividades le parecerán demasiado insignificantes, otras extravagantes; a pesar de ello usted debe elegir, pues de lo contrario será imposible obtener los resultados exactos de esta prueba.",
+                "parrafo4" : "Sobra decir que sus respuestas serán estrictamente confidenciales y sólo utilizadas para el análisis de la prueba. En otras ocasiones usted encontrará la misma actividad figurando en distintos grupos. Puede ocurrir que dentro de un grupo esta actividad le parezca más atractiva y en cambio, en otro grupo la halle indiferente o hasta desagradable. No habrá ninguna contradicción en calificar la misma actividad de distintas maneras: todo depende de cómo está constituido el grupo. Y ahora pase al cuestionario y empiece a trabajar indicando sus preferencias de acuerdo con las instrucciones que acaba de leer. No se detenga por mucho tiempo en cada grupo. Al contestar obedezca a su primer impulso y siga adelante. Desde luego, es completamente inútil consultar con alguien respecto a lo que se debe escoger. Una respuesta que no es la propia, carece totalmente de valor. Después de estas instrucciones encontrará usted una lista de palabras y expresiones relativamente poco usadas, que puede consultar cuando no está seguro del significado de esas palabras.",
+                "subtitulo2" : "EXPLICACION DE ALGUNOS TERMINOS Y EXPRESIONES QUE SE ENCUENTRAN EN EL TEXTO",
+                "palabra" : "Aeromodelo:",
+                "significado" : "Es toda reducción de un avión, no susceptible de llevar un ser humano. Los aeromodelos destinados al vuelo en locales cerrados son muy pequeÃ±os y pesan generalmente unos pocos gramos.",
+                "palabra2" : "Aleación:",
+                "significado2" : "Mezcla de elementos metálicos.",
+                "palabra3" : "Ártico:",
+                "significado3" : "Perteneciente, cercano o relativo al Polo Ártico, como, por ejemplo, Círculo Polar Ártico, tierras árticas, etc.",
+                "palabra4" : "Asma:",
+                "significado4" : "La enfermedad en la cual periódica-mente aparece una dificultad respiratoria.",
+                "palabra5" : "Autógrafo:",
+                "significado5" : "Aplicase al escrito de mano de su mismo autor.",
+                "palabra6" : "Botones:",
+                "significado6" : "Muchacho que sirve en hoteles, restaurantes, etc., para llevar los recados u otras comisiones que se le encargan.",
+                "palabra7" : "Cerámica:",
+                "significado7" : "Arte de elaborar y cocer al horno vasijas y otros objetos de barro, loza, porcelana, etc.",
+                "palabra8" : "Consejero Vocacional:",
+                "significado8" : "Profesional especializado en ayudar a los jóvenes en la elección de su carrera, de acuerdo con sus aptitudes, gustos, posibilidades económicas, etc.",
+                "palabra9" : "Consueta:",
+                "significado9" : "Persona qué en el teatro, oculta a la vista del público, va apuntando a los actores lo que van a decir.",
+                "palabra10" : "Contabilidad de Costos:",
+                "significado10" : "Sistema de contabilidad para calcular los gastos que implica la fabricación o el expendio de una mercancía, o el manejo de una empresa.",
+                "palabra11" : "Contador Público Juramentado:",
+                "significado11" : "Persona titulada por una Facultad de Contaduría, oficialmente reconocida, y cuya firma se requiere para todos los actos o documentos en que las leyes exijan dicho requisito.",
+                "palabra12" : "Decano:",
+                "significado12" : "Título que se da a la persona nombrada para dirigir una Facultad Universitaria.",
+                "palabra13" : "Demográfico:",
+                "significado13" : "Relacionado con la parte de la Estadí¬stica que trata de los habitantes de un país, según sus edades, profesiones, etc.",
+                "palabra14" : "Erosión:",
+                "significado14" : "Desmoronamiento progresivo producido en la corteza terrestre por la acción de los factores destructivos, principalmente el agua y el aire.",
+                "palabra15" : "Exlibris:",
+                "significado15" : "Una papeleta, a menudo adornada con grabados, que se pega en el reverso de la tapa de los libros y en la cual consta el nombre del dueÃ±o, o el de la biblioteca a que pertenece el libro.",
+                "palabra16" : "Faro marítimo:",
+                "significado16" : "Torre alta de las costas, con luz en su parte superior para que durante la noche sirva de señal y aviso a los navegantes.",
+                "palabra17" : "Gráficas:",
+                "significado17" : "Representación de datos numéricos, por medio de una o varias líneas que hacen visible la relación que esos datos guardan entre sí¬, como; por ejemplo, gráfica de la temperatura, de ventas, etc.",
+                "palabra18" : "Metalistería:",
+                "significado18" : "Arte de trabajar los metales.",
+                "palabra19" : "Mimeógrafo:",
+                "significado19" : "Aparato de oficina que sirve para reproducir copias de cartas, circulares y otros impresos.",
+                "palabra20" : "Optometría:",
+                "significado20" : "Técnica usada para la determinación de la agudeza visual y la corrección de los defectos de la vista.",
+                "palabra21" : "Pulmón artificial:",
+                "significado21" : "Aparato que ayuda a una persona a respirar cuando no lo puede hacer normalmente.",
+                "palabra22" : "Plástico (plasticidad):",
+                "significado22" : "Dáctil, blando, que se deja moldear fácilmente.",
+                "palabra23" : "Plan urbanístico:",
+                "significado23" : "Plan general urbano para llevar la ciudad hacia determinados objetivos mediante la ordenación técnica de las calles, plazas, etc.",
+                "palabra24" : "Propaganda gráfica:",
+                "significado24" : "La propaganda que utiliza el material impreso, en forma de carteles murales, Michas, vallas, etc.",
+                "botonCerrar" : "Cerrar"
+            }
+        },
+        "fichaMenu":{
+            "tituloPrincipal" : "Aspirantes",
+            "tituloSolicitud" : "1. Solicitud",
+            "solicitarFicha" : "Solicitar ficha",
+            "solicitarFichaTooltip" : "Solicitar ficha",
+            "tituloPagoExamen" : "2. Pago de examen",
+            "pagoExamenMensaje1" : "Importante: genera la ficha para pagar en bancos o paga en línea solo hasta que te otorguen ficha, en caso de pagar con tarjeta, el pago se verá reflejado automáticamente.",
+            "pagoExamenMensaje2" : "Realizas tu pago en alguna institución bancaria de tu comunidad, identifica la que tenga menor aglomeración y te recordamos que sigas las medidas de seguridad sanitarias como son: evitar congregaciones de más de 50 personas, usar cubrebocas, lavado frecuente de manos. estornudar o toser en la parte interna del antebrazo, saludo a distancia. conservar la sana distancia.",
+            "pagarEnLinea" : "Pagar en línea con tarjeta",
+            "pagarEnLineaTooltip" : "Pagar en línea con tarjeta",
+            "pagarEnBanco" : "Pagar en bancos con ficha o transferencia SPEI",
+            "pagarEnBancoTooltip" : "Pagar en bancos con ficha o transferencia SPEI",
+            "pagarOtro" : "Otro",
+            "pagarOtroTooltip" : "Otro",
+            "AvisoPrivacidad" : "Aviso de privacidad",
+            "AvisoPrivacidadTooltip" : "Aviso de privacidad",
+            "tituloImprimirFicha" : "3. Imprimir ficha",
+            "imprimirFicha" : "Imprimir ficha",
+            "imprimirFichaTooltip" : "Imprimir ficha",
+            "cancelarBoton" : "Regresar",
+            "AvisoPrivacidadDialog":{
+                "titulo":"Aviso de privacidad",
+                "texto":"EN CUMPLIMIENTO A LOS TÉRMINOS DE LOS ARTÍCULOS 3. FRACCIÓN I, 17, 18 y 19 DE LA LEY FEDERAL DE PROTECCIÓN DE DATOS PERSONALES EN POSESIÓN DE LOS PARTICULARES Y 14, 27 Y 29 DE SU REGLAMENTO, SE PONE A SU DISPOSICIÓN EL SIGUIENTE AVISO DE PRIVACIDAD:",
+                "botonSimplificado":"AVISO SIMPLIFICADO",
+                "botonIntegral":"AVISO INTEGRAL",
+                "botonCerrar":"Cerrar"
+            },
+            "OtroPagoDialog":{
+                "titulo":"Confirmar",
+                "contenido":"¿Estás seguro que deseas solicitar una prórroga de pago? Tienes como plazo máximo para pagar 1 semana antes de la entrega de resultados por uno de los otros 2 medios de pago, en caso de no hacerlo tu proceso quedará sin efectos.",
+                "aceptarBoton":"Aceptar",
+                "cancelarBoton":"Cancelar"
+            },
+            "PagoElectronicoDialog":{
+                "titulo":"Pago electrónico",
+                "cancelarBoton":"Cerrar"
+            }
+        },
+        "ficha":{
+            "tituloFicha" : "1. Solicitud de ficha",
+            "tituloFichaTerminos" : "Términos del proceso",
+            "terminos" : "Declaro bajo protesta de decir verdad que la información y documentación proporcionada es verídica, por lo que en caso de existir falsedad en ella, tengo pleno conocimiento que se aplicaran las sanciones administrativas y penas establecidas en los ordenamientos respectivos para quienes se conducen con falsedad ante la autoridad competente de la institución.",
+            "problemasCargarDocumento":{
+                "titulo" : "Advertencia: ",
+                "mensaje" : "ATENCIÓN! Si tienes problemas al cargar tu documento o fotografia por favor revisa detalladamente las especificaciones, en caso de que el problema persista comunicate al correo: orientacionedu@uatx.mx o soporte@uatx.mx, o por Skype a la cuenta soporte@uatx.mx"
+            },
+            "aceptoTerminos" : "He leído y acepto los términos",
+            "tipoDocumento":{
+                "label" : "Tipo de documento:",
+                "placeholder" : "Elige tipo de documento",
+                "requiredError" : "El campo tipo documento es requerido"
+            },
+            "promedio":{
+                "label" : "Promedio:",
+                "placeholder" : "Ingresa tu promedio",
+                "requiredError" : "El campo promedio es requerido",
+                "patternError" : "El campo solo acepta números",
+                "maxError" : "El promedio no puede ser mayor a 10"
+            },
+            "subeConstancia" : "Sube tu constancia:",
+            "cargaFotografia" : "Carga tu fotografía:",
+            "errorArchivo" : {
+                "titulo" : "Error en archivo:",
+                "formatoError" : "El archivo subido no es formato PDF",
+                "tamañoError" : "El archivo subido pesa mas de 1MB"
+            },
+            "errorImagen" : {
+                "titulo" : "Error en imagen:",
+                "formatoError" : "La imagen subida no es formato JPG",
+                "tamañoError" : "La imagen subida pesa mas de 1MB"
+            },
+            "guardarBoton" : "Guardar",
+            "cancelarBoton" : "Cancelar"
+        },
+        "examen":{
+            "iniciarExamen":{
+                "titulo":"Examen de admisión",
+                "heLeidoReglas":"He leído y acepto las reglas",
+                "botonIniciarExamen":"Iniciar examen",
+                "botonCancelar":"Cancelar"
+            },
+            "finExamen":{
+                "fechaHora":"Fecha y hora:",
+                "aviso":"Aviso",
+                "botonAceptar":"Aceptar"
+            },
+            "avanceExamen":{
+                "tituloAvance":"Datos del aspirante",
+                "folioUAT":"Folio UATx:",
+                "fichaIngreso":"Ficha ingreso:",
+                "modulosContestados":"Módulos contestados:",
+                "nombre":"Nombre:",
+                "aviso":"Aviso",
+                "modulosContestar":"Módulos por contestar:",
+                "mensajeNoHasRespondido":"No has respondido ninguna sección del examen:",
+                "mensajeParaContestar":"Para contestar tu examen regresa a la ventana anterior y da clic en el botón \"Realizar examen\"",
+                "subtituloModulosContestados":"Módulos contestados",
+                "moduloContestados":"Módulo:",
+                "areaConocimientoContestados":"Área de conocimiento",
+                "subtituloModulosNoContestados":"Módulos no contestados",
+                "moduloNoContestados":"Módulo:",
+                "areaConocimientoNoContestados":"Área de conocimiento",
+                "botonRegresar":"Regresar"
+            },
+            "tituloExamen":"Examen de admisión UAT",
+            "horaInicio":"Hora de inicio del examen:",
+            "horaFin":"Hora de fin del examen:",
+            "tiempoModulo":"Tiempo para este módulo:",
+            "currentTime":"Fecha y hora actual:",
+            "tiempoRestante":"Tiempo restante:",
+            "modulo":"Módulo:",
+            "minutos": "Minutos",
+            "tiempoAgotado" : "Tiempo agotado",
+            "tiempoSeccionFinalizado":"Se ha terminado el tiempo de esta sección",
+            "atencionTiempo30segundos":"ATENCIÓN! Tu tiempo para este módulo esta a punto de terminarse, ya no podrás contestar más preguntas, presiona el botón Guardar para continuar, de lo contrario tu avance se guardará automáticamente",
+            "atencionTiempo1minuto":"ATENCIÓN! Guarda tus respuestas para este módulo o de lo contrario al terminar el tiempo ya no podrás contestar más preguntas",
+            "Error":"ha ocurrido un error, vuelva a intentarlo más tarde",
+            "botonGuardar":"Guardar",
+            "sweetAlert":{
+                "titulo":"Has infringido en las reglas del examen!",
+                "denyButtonText":"Iniciar nuevamente",
+                "examenFinalizo":"El examen ha finalizado"
+            },
+            "toastExamenFinalizo":"El examen finalizó"
+        }
+    }
+}

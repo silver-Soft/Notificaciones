@@ -1,0 +1,208 @@
+.body{
+    display: flex;
+    flex-direction: column;
+
+    min-height:  calc(100vh - 197px);
+}
+.mat-sidenav{
+    margin: 16px;
+    width: 300px;
+    border-right: none;
+    /* background-color: rgb(75, 0, 25); */
+    background-color: #750a2c;
+    color: azure;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+
+    height: 250px;
+}
+
+.menu-button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+    color: azure;
+    padding: 0px;
+}
+
+.custom-panel-body {
+    padding: 0 !important;
+  }
+.menu-button mat-icon{
+    color: azure;
+    margin-right: 8px;
+}
+
+.menu-custom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 0.5rem;
+    color: azure; 
+}
+.name{
+    margin: 0;
+    margin-top: 8px;
+    font-weight: normal;
+}
+
+mat-divider{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.contenedor {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+.content{
+    height: calc(100vh - 98px);
+    margin: 16px;
+    margin-left: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+    color: lightgray;
+}
+
+.background {
+    position: relative;
+    display: flex;
+    /* color: azure;
+    background-image: linear-gradient(
+        180deg,
+        rgba(74, 23, 40, 0.85) 0%,
+        rgba(78, 10, 33, 0.85) 50%,
+        rgba(94, 7, 35, 0.85) 100%
+        ),
+        url(../../../../../assets/imagenes/rectoriauatx.png);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-position: center;
+
+}
+
+.imageBack{
+    background-image:
+    radial-gradient(circle, rgba(117,10,44,0.50129555240064774) 72%, rgba(255,255,255,0.9447129193474265) 100%),
+    url(https://uatx.mx/siia/home/rectoriauatx.png);
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+@media(max-width: 1250px){
+    .imageBack{
+        width: 0%;
+        background-size: cover;
+        background-position: center;
+    }
+    
+}
+
+.centrado {
+    position: absolute;
+    top: 0px;
+    right: 3px;
+    color: #5E5B5B;
+}
+
+.icon {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.mat-toolbar{
+    /* background-color: rgb(75, 0, 25); */
+    background-color: #750a2c;
+    height:25px; 
+    color: azure;
+}
+
+.navButton{
+    color: #ffffff;
+    transition: 0.3s all;
+    transform: scale(1);
+}
+.navButtonhover{
+    background-color: rgba(255, 255, 255, 0.644);/*rgba(94,7,35, 0.3); */
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #5E5B5B;
+    transition: 0.3s all;
+    transform: scale(1.1);
+}
+.navButton:hover{
+    background-color: rgba(255, 255, 255, 0.644);/*rgba(94,7,35, 0.3); */
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #5E5B5B;
+    transition: 0.3s all;
+    transform: scale(1.1);
+}
+
+.bindButton{
+    background-color: antiquewhite;
+    color: brown;
+}
+
+@media (hover: none){
+    .mat-expansion-panel:not(.mat-expanded):not([aria-disabled='true']) 
+
+    .mat-expansion-panel-header:hover {
+        background: transparent;
+    }
+}
+.parametersPanel .mat-content span {    
+    display: block !important;    
+    flex: 1;
+}
+.boton-primario{
+    color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: start
+}
+.boton-primario mat-icon{
+    margin-right: 10px;
+}
+.boton-primario span{
+    width: max-content;
+}
+.boton-secundario-panel{
+    color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: start
+}
+
+.boton-secundario-panel span{
+    width: max-content;
+}
+.boton-secundario{
+    color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: start
+}
+.boton-terciario{
+    color: azure; 
+    display: flex; 
+    justify-content: end;
+}
+.boton-terciario span{
+    color: aliceblue;
+}

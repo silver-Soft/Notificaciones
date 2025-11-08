@@ -1,0 +1,41 @@
+<div style=" margin-top: 0px; padding: 0%;">
+    <mat-card style="height: 50px;background-color: #750a2c; width: 100%; display: flex; justify-content: center; align-items: center; border-top-left-radius: 10px;
+    border-top-right-radius: 10px;">
+        <mat-card-title style="font-size: 1.5rem; color: white; text-align: center">{{data.titulo}}</mat-card-title>
+        <button mat-icon-button class="close-dialog-btn" (click)="onNoClick()">
+            <mat-icon style="color: white;">cancel</mat-icon>
+        </button>
+    </mat-card>
+    <mat-card>
+        <mat-accordion *ngFor="let aviso of lstAvisosSiia">
+            <mat-expansion-panel (opened)="panelOpenState = true"
+                                 (closed)="panelOpenState = false" [expanded]="true" style="margin-bottom: 20px;">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                    {{aviso.titulo}}
+                </mat-panel-title>
+                <!--mat-panel-description>
+                  Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                </mat-panel-description-->
+              </mat-expansion-panel-header>
+              <div class="contenedor" [style]="aviso.imagen!=null?'grid-template-columns: 20% 1fr;':'grid-template-columns: 0% 1fr;'">
+                <div class="image-container">
+                    <img *ngIf="aviso.imagen!=null" style="height: auto; width: 100%;" [src]="'data:image/jpeg;base64,' + aviso.imagen" alt="Imagen del aviso">
+                </div>
+                <div>
+                    <div class="grid-block">
+                        <div [innerHTML]="aviso.descripcion" class="descripcion-html"></div>
+                        <!--div class="btn-container">
+                            <button class="ingresar" mat-raised-button color="primary" type="button"
+                                matTooltip="Ingresar" matTooltipPosition="above"
+                                (click)="openNewTab('https://siia.uatx.mx:8743/SIIA/')">
+                                <mat-icon>input</mat-icon>
+                            </button>
+                        </div-->
+                    </div>
+                </div>
+            </div>
+            </mat-expansion-panel>
+          </mat-accordion>        
+    </mat-card>
+</div>

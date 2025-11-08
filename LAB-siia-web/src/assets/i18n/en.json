@@ -1,0 +1,615 @@
+{
+    "template": {
+        "header":{
+            "iniciarSesion":"Log in",
+            "elegirIdioma":"Language",
+            "idiomaEspañol":"Spanish",
+            "idiomaIngles":"English",
+            "inicio":"home",
+            "salir" : "Log out"
+        },
+        "footer":{
+            "copyright" : "©2003-2022",
+            "siia" : "Comprehensive Administrative Information System",
+            "version" : "5.0",
+            "universidad" : "Autonomous University of Tlaxcala ",
+            "sistemas" : "Department of Information Systems and Technologies"
+        },
+        "notificaciones":{
+            "usuarioLogueado" : "The user is already logged in!",
+            "error":{
+                "comunicacion" : "There's no communication",
+                "solicitudErronea" : "wrong request",
+                "solicitudNoAutorizada" : "unauthorized request",
+                "intentaloMasTarde" : "an error has occurred, please try again later"
+            }
+        }
+    },
+    "login":{
+        "login" : "Login",
+        "user" : "User",
+        "password" : "Password",
+        "button" : "Login"
+    },
+    "service":{
+        "error" : "Incorrect data",
+        "notauthorized" : "Not authorized",
+        "nocomunication" : "There's no communication"
+    },
+    "aspirantes": {
+        "registro": {
+            "tituloPrincipal" : "Applicant Registration",
+            "stepperLabel1" : "Applicant data",
+            "QueCarreraEstudiar" : "What career would you like to study?",
+            "primerOpcion":{
+                "label" : "First option",
+                "placeholder" : "Choose your first option",
+                "requiredError" : "The first option field is required"
+            },
+            "segundaOpcion":{
+                "label" : "Second option",
+                "placeholder" : "Choose your second option",
+                "requiredError" : "The second option field is required"
+            },
+            "carreraElegida":{
+                "label" : "What career would you like to study that do not exist in the institution?",
+                "placeholder" : "Enter career"
+            },
+            "aspiranteNombre":{
+                "label" : "Name",
+                "placeholder" : "Enter name",
+                "requiredError" : "The name field is required"
+            },
+            "aspiranteApPaterno":{
+                "label" : "Paternal surname",
+                "placeholder" : "Enter paternal surname",
+                "requiredError" : "The paternal surname field is required"
+            },
+            "aspiranteApMaterno":{
+                "label" : "Maternal surname",
+                "placeholder" : "Enter maternal surname",
+                "requiredError" : "The maternal surname field is required"
+            },
+            "aspiranteFechaNac":{
+                "label" : "Date of birth",
+                "requiredError" : "The date of birth field is required"
+            },
+            "aspiranteGenero":{
+                "label" : "Gender",
+                "placeholder" : "choose your gender",
+                "requiredError" : "The gender field is required"
+            },
+            "aspiranteEstadoCivil":{
+                "label" : "Marital status",
+                "placeholder" : "Choose your marital status",
+                "requiredError" : "The marital status field is required"
+            },
+            "aspiranteNacionalidad":{
+                "label" : "Nationality",
+                "placeholder" : "Choose your nationality",
+                "requiredError" : "The nationality field is required"
+            },
+            "aspiranteEstadoNacimiento":{
+                "label" : "State of birth",
+                "placeholder" : "Choose your state of birth",
+                "requiredError" : "The state of birth field is required"
+            },
+            "aspiranteCURP":{
+                "label" : "CURP",
+                "placeholder" : "Enter your CURP",
+                "requiredError" : "The CURP field is required",
+                "patternError" : "Enter a valid CURP"
+            },
+            "aspiranteLenguas":{
+                "label" : "Do you speak any indigenous language?",
+                "placeholder" : "Choose indigenous language",
+                "requiredError" : "The indigenous languages ​​field is required"
+            },
+            "aspiranteBeneficiario":{
+                "label" : "Are you a Prospera beneficiary?",
+                "placeholder" : "choose an option",
+                "requiredError" : "The field is required"
+            },
+            "aspiranteProsperaFolio":{
+                "label" : "Prospera folio",
+                "placeholder" : "Enter Prospera folio",
+                "requiredError" : "The field Prospera folio is required"
+            },
+            "stepperLabel2" : "In your daily life, do you come across?",
+            "dificultadMoverse":{
+                "label" : "¿Difficulty in walking, moving, climbing or descending?",
+                "placeholder" : "Choose an option",
+                "requiredError" : "The field is required"
+            },
+            "dificultadVer":{
+                "label" : "¿Difficulty seeing, even when wearing glasses",
+                "placeholder" : "Choose an option",
+                "requiredError" : "The field is required"
+            },
+            "dificultadHablar":{
+                "label" : "¿Difficulty to speak, communicate or converse?",
+                "placeholder" : "Choose an option",
+                "requiredError" : "The field is required"
+            },
+            "dificultadOir":{
+                "label" : "Difficulty hearing, even when wearing hearing aids?",
+                "placeholder" : "Choose an option",
+                "requiredError" : "The field is required"
+            },
+            "dificultadVestirse":{
+                "label" : "Difficulty in dressing, bathing or eating?",
+                "placeholder" : "Choose an option",
+                "requiredError" : "The field is required"
+            },
+            "dificultadAprender":{
+                "label" : "Difficulty paying attention or learning simple things?",
+                "placeholder" : "Choose an option",
+                "requiredError" : "The field is required"
+            },
+            "utilizarBaston":{
+                "label" : "Has the need to use cane, walker or wheelchair?",
+                "placeholder" : "Choose an option",
+                "requiredError" : "The field is required"
+            },
+            "UltimamenteEnfrentadoSituaciones": "Have you recently been confronted with the following situations?",   
+            "situacionMiedo":{
+                "label" : "Fear?",
+                "placeholder" : "Choose an option",
+                "requiredError" : "The field is required"
+            },
+            "situacionAngustia":{
+                "label" : "Distress?",
+                "placeholder" : "Choose an option",
+                "requiredError" : "The field is required"
+            },
+            "situacionTristeza":{
+                "label" : "Sadness?",
+                "placeholder" : "Choose an option",
+                "requiredError" : "The field is required"
+            },
+            "situacionSoledad":{
+                "label" : "¿Solitude?",
+                "placeholder" : "Choose an option",
+                "requiredError" : "The field is required"
+            },
+            "situacionEnfado":{
+                "label" : "¿Anger?",
+                "placeholder" : "Choose an option",
+                "requiredError" : "The field is required"
+            },
+            "situacionDisgusto":{
+                "label" : "Do you dislike anything?",
+                "placeholder" : "Choose an option",
+                "requiredError" : "The field is required"
+            },
+            "situacionInfeliz":{
+                "label" : "Do you feel unhappy?",
+                "placeholder" : "Choose an option",
+                "requiredError" : "The field is required"
+            },
+            "situacionFrustrado":{
+                "label" : "Do you feel frustrated?",
+                "placeholder" : "Choose an option",
+                "requiredError" : "The field is required"
+            },
+            "stepperLabel3" : "Location data",
+            "aspiranteLocCalle":{
+                "label" : "Street",
+                "placeholder" : "Enter street",
+                "requiredError" : "The street field is required"
+            },
+            "aspiranteLocNumero":{
+                "label" : "Number",
+                "placeholder" : "Enter street number",
+                "requiredError" : "Street number field required"
+            },
+            "aspiranteLocEstado":{
+                "label" : "State",
+                "placeholder" : "Select state",
+                "requiredError" : "State field is required"
+            },
+            "aspiranteLocMunicipio":{
+                "label" : "City",
+                "placeholder" : "Select city",
+                "requiredError" : "City field is required"
+            },
+            "aspiranteLocLocalidad":{
+                "label" : "Location",
+                "placeholder" : "Choose location",
+                "requiredError" : "Location field is required"
+            },
+            "aspiranteTelefono":{
+                "label" : "Telephone Number",
+                "placeholder" : "Enter phone number",
+                "hint" : "Enter a 10 digit number ",
+                "patternError" : "Enter a valid phone number",
+                "requiredError" : "Phone field is required"
+            },
+            "correoBox": " Enter your personal e-mail address, the one you use frequently and verify that it is spelled correctly, because it is the means of communication and contact with you",
+            "mensajePromedio":" In order to register, answer the context booklet (file) and take the admission exam; your average must match from this record",
+            "aspiranteCorreo":{
+                "label" : "Enter your email address",
+                "placeholder" : "Enter your email address",
+                "requiredError" : "E-mail field is required",
+                "emailError" : "E-mail field is required"
+            },
+            "escuelaProcedenciaTitulo":"School of origin",
+            "escuelaEstado":{
+                "label" : "School state",
+                "placeholder" : "Choose state of the school",
+                "requiredError" : "state of the school field is required"
+            },
+            "escuelaProcedencia":{
+                "label" : "School of origin",
+                "placeholder" : "Choose your school of origin",
+                "requiredError" : "School of origin field is required"
+            },
+            "aspirantePromedio":{
+                "label" : "General average",
+                "placeholder" : "Enter general average",
+                "requiredError" : "General average field is required",
+                "patternError" : "The field only accepts numbers",
+                "maxError" : "The average cannot be greater than 10"
+            },
+            "aspiranteEspecialidad":{
+                "label" : "Specialty",
+                "placeholder" : "Enter specialty",
+                "requiredError" : "Specialty field is required"
+            },
+            "stepperLabel4" : "Parental and/or guardian information",
+            "datosPadreTitulo" : "Father's information",
+            "padreNombre":{
+                "label" : "Name",
+                "placeholder" : "Enter father's name",
+                "requiredError" : "The field is required"
+            },
+            "padreApPaterno":{
+                "label" : "Paternal Surname",
+                "placeholder" : "Enter father's surname",
+                "requiredError" : "The field is required"
+            },
+            "padreApMaterno":{
+                "label" : "Maternal Surname",
+                "placeholder" : "Enter mother's surname",
+                "requiredError" : "The field is required"
+            },
+            "datosMadreTitulo" : "Mother's information",
+            "madreNombre":{
+                "label" : "Name",
+                "placeholder" : "Enter mother's name",
+                "requiredError" : "The field is required"
+            },
+            "madreApPaterno":{
+                "label" : "Paternal Surname",
+                "placeholder" : "Enter father's surname",
+                "requiredError" : "The field is required"
+            },
+            "madreApMaterno":{
+                "label" : "Maternal Surname",
+                "placeholder" : "Enter mother's surname",
+                "requiredError" : "The field is required"
+            },
+            "domicilioTutorTitulo" : "Tutor's address",
+            "mismoDomicilioBoton" : "Same address",
+            "aspiranteTutor":{
+                "label" : "Who is your tutor?",
+                "placeholder" : "Choose your tutor",
+                "requiredError" : "The field is required"
+            },
+            "tutorNombre":{
+                "label" : "Name",
+                "placeholder" : "Enter tutor's name",
+                "requiredError" : "The field is required"
+            },
+            "tutorApPaterno":{
+                "label" : "Paternal Surname",
+                "placeholder" : "Enter tutor's surname",
+                "requiredError" : "The field is required"
+            },
+            "tutorApMaterno":{
+                "label" : "Maternal Surname",
+                "placeholder" : "Enter tutor's surname",
+                "requiredError" : "The field is required"
+            },
+            "tutorCalle":{
+                "label" : "Street",
+                "placeholder" : "Enter street",
+                "requiredError" : "Street field is required"
+            },
+            "tutorCalleNumero":{
+                "label" : "Number",
+                "placeholder" : "Enter street number",
+                "requiredError" : "Number field is required"
+            },
+            "tutorEstado":{
+                "label" : "State",
+                "placeholder" : "Select state",
+                "requiredError" : "State field is required"
+            },
+            "tutorMunicipio":{
+                "label" : "City",
+                "placeholder" : "Select city",
+                "requiredError" : "City field is required"
+            },
+            "tutorLocalidad":{
+                "label" : "Location",
+                "placeholder" : "Choose location",
+                "requiredError" : "Location field is required"
+            },
+            "tutorTelefono":{
+                "label" : "Telephone Number",
+                "placeholder" : "Enter phone number",
+                "hint" : "Enter a 10 digit number ",
+                "patternError" : "Enter a valid phone number",
+                "requiredError" : "Phone field is required"
+            },
+            "tutorCorreo":{
+                "label" : "Enter your email address",
+                "placeholder" : "Enter your email address",
+                "emailError" : "E-mail field is required"
+            },
+            "cualquierProblemaTitulo" : "If you have any problems with registration, please contact the Educational Guidance Department at orientaspirantes@uatx.mx or orientaspirantes1@uatx.mx",
+            "convocatoriaCerradaTitulo" : "Call Closed",
+            "convocatoriaCerrada" : "Sorry, at the moment there is no active call for registration of applicants. We ask you to consult the University page https://www.uatx.mx, for more information.",
+            "formularioRegistroGuardarBoton" : "Save",
+            "formularioRegistrocancelarBoton" : "Cancel",
+            "siguienteBoton" : "Next",
+            "anteriorBoton" : "Back",
+            "registroCompletoDialog":{
+                "correoEnviadoTitulo" : "We have sent you an email to the address you provided. Check even in spam",
+                "nombreTexto" : "Name: ",
+                "primerOpcionTexto" : "First option: ",
+                "segundaOpcionTexto" : "second option: ",
+                "curpTexto" : "CURP: ",
+                "folioTexto" : "UATX folio: ",
+                "contraseñaTexto" : "Password: ",
+                "aceptarBoton" : "Accept"
+            }
+        },
+        "logueo":{
+            "tituloPrincipal" : "Applicants",
+            "folioUATx":{
+                "label" : "UATx folio",
+                "placeholder" : "Enter your UATx folio",
+                "requiredError" : "The UATx folio field is required"
+            },
+            "contraseña":{
+                "label" : "Password",
+                "placeholder" : "Enter your password",
+                "requiredError" : "The password field is required"
+            },
+            "iniciarSesionBoton" : "Log in",
+            "iniciarSesionBotonTooltip" : "Log in to the system with the data entered",
+            "noAspiranteMensaje" : "If you are not an applicant, enter here",
+            "dialog" : { 
+                "titulo" : "Access to SIIA",
+                "subtituloCualFolio" : "What is my UATx folio and password?",
+                "textoCual" : "The UATx folio and password are found on your SIIA registration voucher.",
+                "subtituloOlvidasteFolio" : "Forgot your UATx folio and password?",
+                "textoOlvidaste" : "Go to the Educational Guidance Department on the Rectory campus to have it provided.",
+                "botonCerrar" : "Close"
+            }
+        },
+        "inicio":{
+            "titulo" : "Applicants",
+            "tituloSIIA" : "1. SIIA registration",
+            "reimprimiComprobanteSIIA": "Print voucher of registration to SIIA",
+            "reimprimiComprobanteSIIATooltip": "Print voucher of registration to SIIA",
+            "tituloSOV" : "2. Vocational Guidance System (SOV)",
+            "reimprimiComprobanteSOV": "Print voucher SOV",
+            "reimprimiComprobanteSOVTooltip": "Print voucher SOV",
+            "contestarSOV": "Answer SOV",
+            "contestarSOVTooltip": "Answer SOV",
+            "tituloFicha" : "3. Request for a file",
+            "SolicitudFicha" : "Request for a file",
+            "SolicitudFichaTooltip" : "Request for a file",
+            "imprimirGuia" : "Print study guide",
+            "imprimirGuiaTooltip" : "Print study guide",
+            "tituloExamen" : "4. Admission exam",
+            "realizarExamen" : "Take exam",
+            "realizarExamenTooltip" : "Take exam",
+            "avanceExamen" : "Check exam progress",
+            "avanceExamenTooltip" : "Check exam progress"
+        },
+        "contestarSOV":{
+            "tituloPrincipal" : "Answer SOV",
+            "tituloSOVCompletado" : "SOV results",
+            "instruccionesSOV" : "Instructions:",
+            "intruccionesTexto":"Below you will find twelve sections. In each of these twelve sections there is a series of activities, gathered in groups of three. First read the three activities that make up each group, then decide which of the three you like best and select the option with the plus (+) sign. Then decide which of the three activities you like the least and select the option with the minus sign (-). You just have to choose two of three answers, one plus(+) and one minus(-).",
+            "enHora" : "Congratulations!",
+            "aspiranteNombre" : "Name:",
+            "aspiranteFolio" : "UATx folio: ",
+            "aspiranteOpcion" : "First option: ",
+            "guardarBoton" : "Save",
+            "cancelarBoton" : "Back",
+            "regresarBoton" : "Back",
+            "imprimirSOVBoton" : "Print voucher",
+            "ContestarSOVDialog" : {
+                "titulo" : "Access to SIIA",
+                "subtitulo" : "INSTRUCTIONS TO ANSWER THE QUESTIONNAIRE",
+                "parrafo" : "This form is intended to help you discover your vocational preferences. This is not an exam; There are no exact or inexact answers here. Any answer that accurately reflects your way of thinking is a good answer. Below you will find twelve sections. In each of these twelve sections there is a series of activities, gathered in groups of three. First read the three activities that make up each group, then decide which of the three you like best and select the option with the plus sign. Then decide which of the three activities you like the least and select the option with the minus sign.",
+                "parrafo2" : "In the example that appears below, the person who answers the form, indicates in the first group of three activities, that he liked visiting a museum more and, on the other hand, he liked leafing through books and magazines in a bookstore less. Therefore, I select the circle to the left of option 3 and the circle to the right of option 2, respectively. In the second group of three activities, the same person indicates that he liked collecting autographs more and collecting butterflies less. Therefore, he punched the circle to the left of option 4, and the calculation to the right of option 6.",
+                "lista" : "Visit an art gallery",
+                "lista2" : "Browse books and magazines in a bookstore",
+                "lista3" : "To visit a museum",
+                "parrafo3" : "Some of the activities listed on this form require prior study and training; Even if you do not have them, consider that you already have the necessary preparation to carry out said activity. Don't choose an activity just because it's new or unusual, choose what you would like to do if you were familiar with each of the group's activities. In some cases it will be a bit difficult for you to decide which activity you like best, because all three will seem equally pleasant or unpleasant. However, it is essential that you choose among them the one that you would like more and the one that you would like less. Perhaps some of the activities will seem too insignificant, others extravagant; however, you must choose, otherwise it will be impossible to obtain the exact results of this test.",
+                "parrafo4" : "It goes without saying that your answers will be strictly confidential and only used for the analysis of the test. At other times you will find the same activity appearing in different groups. It may happen that within one group you find this activity more attractive and, on the other hand, in another group you find it indifferent or even unpleasant. There will be no contradiction in qualifying the same activity in different ways: it all depends on how the group is constituted. And now go to the questionnaire and get to work indicating your preferences according to the instructions you just read. Don't dwell too long on each group. When answering, obey your first impulse and move on. Of course, it is completely useless to consult with someone about what to choose. An answer that is not your own is totally worthless. After these instructions you will find a list of relatively rarely used words and expressions, which you can consult when you are not sure of the meaning of those words.",
+                "subtitulo2" : "EXPLICACION DE ALGUNOS TERMINOS Y EXPRESIONES QUE SE ENCUENTRAN EN EL TEXTO",
+                "palabra" : "Aircraft model:",
+                "significado" : "It is any reduction of an airplane, not capable of carrying a human being. Model aircraft intended for indoor flight are very small and generally weigh a few grams.",
+                "palabra2" : "Alloy:",
+                "significado2" : "Mix of metallic elements.",
+                "palabra3" : "Arctic:",
+                "significado3" : "Of, near, or relating to the Arctic Pole, such as the Arctic Circle, arctic lands, etc.",
+                "palabra4" : "Asthma:",
+                "significado4" : "The disease in which a respiratory difficulty periodically appears.",
+                "palabra5" : "Autograph:",
+                "significado5" : "Apply to the handwriting of the same author.",
+                "palabra6" : " hotel bellman",
+                "significado6" : "Boy who serves in hotels, restaurants, etc., to carry errands or other commissions that are entrusted to him.",
+                "palabra7" : "Ceramics:",
+                "significado7" : "Art of making and baking pots and other objects made of clay, earthenware, porcelain, etc.",
+                "palabra8" : "Vocational Counselor:",
+                "significado8" : "Professional specialized in helping young people in choosing their career, according to their aptitudes, tastes, economic possibilities, etc.",
+                "palabra9" : "Consueta:",
+                "significado9" : "Person who in the theater, hidden from the public eye, points out to the actors what they are going to say.",
+                "palabra10" : "Cost accounting:",
+                "significado10" : "Accounting system to calculate the expenses involved in the manufacture or sale of merchandise, or the management of a company.",
+                "palabra11" : "Sworn Public Accountant:",
+                "significado11" : "Person qualified by an officially recognized School of Accounting, and whose signature is required for all acts or documents in which the laws require said requirement.",
+                "palabra12" : "Dean:",
+                "significado12" : "Title given to the person appointed to direct a University Faculty.",
+                "palabra13" : "Demographic:",
+                "significado13" : "Related to the part of Statistics that deals with the inhabitants of a country, according to their ages, professions, etc.",
+                "palabra14" : "Erosion:",
+                "significado14" : "Progressive collapse produced in the earth's crust by the action of destructive factors, mainly water and air.",
+                "palabra15" : "Bookplate:",
+                "significado15" : "A ballot, often adorned with engravings, that is pasted on the back of the book cover and on which the name of the owner, or the name of the library to which the book belongs, appears.",
+                "palabra16" : "Maritime lighthouse:",
+                "significado16" : "High tower of the coasts, with light on its upper part so that during the night it serves as a signal and warning to navigators.",
+                "palabra17" : "Graphics:",
+                "significado17" : "Representation of numerical data, by means of one or several lines that make visible the relationship that these data have with each other, such as; for example, graph of temperature, sales, etc.",
+                "palabra18" : "Metalwork:",
+                "significado18" : "Art of metal working.",
+                "palabra19" : "Mimeograph:",
+                "significado19" : "Office device used to reproduce copies of letters, circulars and other printed matter.",
+                "palabra20" : "Optometry:",
+                "significado20" : "Technique used for the determination of visual acuity and the correction of vision defects.",
+                "palabra21" : "Artificial lung:",
+                "significado21" : "A device that helps a person breathe when they cannot breathe normally.",
+                "palabra22" : "Plastic (plasticity):",
+                "significado22" : "Dactile, soft, easily molded.",
+                "palabra23" : "Urban plan:",
+                "significado23" : "General urban plan to lead the city towards certain objectives through the technical organization of streets, squares, etc.",
+                "palabra24" : "Graphic advertising:",
+                "significado24" : "The propaganda that uses printed material, in the form of wall posters, Michas, billboards, etc.",
+                "botonCerrar" : "Close"
+            }
+        },
+        "fichaMenu":{
+            "tituloPrincipal" : "Applicants",
+            "tituloSolicitud" : "1. Request",
+            "solicitarFicha" : "Request file",
+            "solicitarFichaTooltip" : "Request file",
+            "tituloPagoExamen" : "2. Exam payment",
+            "pagoExamenMensaje1" : "Important: generate the token to pay banks or pay online only until they grant you a token, in case of paying by card, the payment will be reflected automatically.",
+            "pagoExamenMensaje2" : "You make your payment at a banking institution in your community, identify the one with the least crowds and we remind you to follow health safety measures such as: avoid congregations of more than 50 people, use face masks, frequent hand washing. sneezing or coughing on the inside of the forearm, greeting from a distance. keep a healthy distance.",
+            "pagarEnLinea" : "Pay online with card",
+            "pagarEnLineaTooltip" : "Pay online with card",
+            "pagarEnBanco" : "Pay in banks with voucher or SPEI transfer",
+            "pagarEnBancoTooltip" : "Pay in banks with voucher or SPEI transfer",
+            "pagarOtro" : "Other",
+            "pagarOtroTooltip" : "Other",
+            "AvisoPrivacidad" : "Notice of Privacy",
+            "AvisoPrivacidadTooltip" : "Notice of Privacy",
+            "tituloImprimirFicha" : "3. Print file",
+            "imprimirFicha" : "Print file",
+            "imprimirFichaTooltip" : "Print file",
+            "cancelarBoton" : "Back",
+            "AvisoPrivacidadDialog":{
+                "titulo":"Notice of Privacy",
+                "texto":"IN COMPLIANCE WITH THE TERMS OF ARTICLES 3. SECTION I, 17, 18 and 19 OF THE FEDERAL LAW FOR THE PROTECTION OF PERSONAL DATA IN POSSESSION OF INDIVIDUALS AND 14, 27 AND 29 OF ITS REGULATIONS, THE FOLLOWING NOTICE IS MADE AVAILABLE TO YOU OF PRIVACY:",
+                "botonSimplificado":"SIMPLIFIED NOTICE",
+                "botonIntegral":"COMPREHENSIVE NOTICE",
+                "botonCerrar":"Close"
+            },
+            "OtroPagoDialog":{
+                "titulo":"Confirm",
+                "contenido":"Are you sure you want to request a payment extension? You have a maximum term to pay 1 week before the delivery of results by one of the other 2 means of payment, if you do not do so, your process will be without effect.",
+                "aceptarBoton":"ok",
+                "cancelarBoton":"cancel"
+            },
+            "PagoElectronicoDialog":{
+                "titulo":"Pago electrónico",
+                "cancelarBoton":"Close"
+            }
+        },
+        "ficha":{
+            "tituloFicha" : "Request for a file",
+            "tituloFichaTerminos" : "Process Terms",
+            "terminos" : "I declare under protest to tell the truth that the information and documentation provided is true, so that if there is falsehood in it, I am fully aware that the administrative sanctions and penalties established in the respective legal systems will be applied to those who behave falsely before the competent authority of the institution.",
+            "problemasCargarDocumento":{
+                "titulo" : "Warning: ",
+                "mensaje" : "ATTENTION! If you have problems uploading your document or photograph, please review the specifications in detail, in case the problem persists, contact the email: orientacionedu@uatx.mx or soporte@uatx.mx, or by Skype to the account soporte@uatx.mx"
+            },
+            "aceptoTerminos" : "I have read and accept the terms",
+            "tipoDocumento":{
+                "label" : "Document type:",
+                "placeholder" : "Choose document type",
+                "requiredError" : "The document type field is required"
+            },
+            "promedio":{
+                "label" : "General average",
+                "placeholder" : "Enter general average",
+                "requiredError" : "General average field is required",
+                "patternError" : "The field only accepts numbers",
+                "maxError" : "The average cannot be greater than 10"
+            },
+            "subeConstancia" : "Upload your constancy:",
+            "cargaFotografia" : "Upload your photo:",
+            "errorArchivo" : {
+                "titulo" : "File error:",
+                "formatoError" : "The uploaded file is not PDF format",
+                "tamañoError" : "The uploaded file is larger than 1MB"
+            },
+            "errorImagen" : {
+                "titulo" : "Image error:",
+                "formatoError" : "The uploaded image is not JPG format",
+                "tamañoError" : "The uploaded image is larger than 1MB"
+            },
+            "guardarBoton" : "Save",
+            "cancelarBoton" : "Cancel"
+        },
+        "examen":{
+            "iniciarExamen":{
+                "titulo":"Admission Exam",
+                "heLeidoReglas":"I have read and accept the rules",
+                "botonIniciarExamen":"Start exam",
+                "botonCancelar":"Cancel"
+            },
+            "finExamen":{
+                "fechaHora":"Date and time:",
+                "aviso":"Notice",
+                "botonAceptar":"Accept"
+            },
+            "avanceExamen":{
+                "tituloAvance":"Applicant data",
+                "folioUAT":"UATx Folio:",
+                "fichaIngreso":"Entry file:",
+                "modulosContestados":"Answered modules:",
+                "nombre":"Name:",
+                "aviso": "Notice",
+                "modulosContestar":"Modules to answer:",
+                "mensajeNoHasRespondido":"You have not answered any section of the exam:",
+                "mensajeParaContestar":"To answer your exam, return to the previous window and click on the button \"Take exam\"",
+                "subtituloModulosContestados":"Answered modules",
+                "moduloContestados":"Module:",
+                "areaConocimientoContestados":"Knowledge area",
+                "subtituloModulosNoContestados":"Non-answered modules",
+                "moduloNoContestados":"Module:",
+                "areaConocimientoNoContestados":"Knowledge area",
+                "botonRegresar": "Back"
+            },
+            "tituloExamen":"UAT Admission Exam",
+            "horaInicio":"Exam start time:",
+            "horaFin":"Exam end time:",
+            "tiempoModulo":"Time for this module:",
+            "currentTime":"Current date and time:",
+            "tiempoRestante":"Time remaining:",
+            "modulo":"Module:",
+            "minutos":"Minutes",
+            "tiempoAgotado":"Time out",
+            "tiempoSeccionFinalizado":"The time for this section has expired",
+            "atencionTiempo30segundos":"ATTENTION! Your time for this module is almost up, you will not be able to answer any more questions, press the Save button to continue, otherwise your progress will be automatically saved",
+            "atencionTiempo1minuto":"ATTENTION! Save your answers for this module or else at the end of the time you will not be able to answer any more questions",
+            "Error":"An error has occurred, please try again later",
+            "botonGuardar":"Save",
+            "sweetAlert":{
+                "titulo":"You have violated the exam rules!",
+                "denyButtonText":"Start again",
+                "examenFinalizo":"The exam ended"
+            },
+            "toastExamenFinalizo":"The exam ended"
+        }
+    }
+}

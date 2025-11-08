@@ -1,0 +1,45 @@
+.footer {
+  height: 90px;
+  width: 100%;
+  background-color: #1a1a1a;
+  color: white;
+  font-size: small;
+  
+  margin-top: auto;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;      
+}
+
+.item1 { 
+  flex-grow:0;
+  align-self:auto;
+}
+    
+.item2 { 
+  flex-grow:1;
+  align-self:auto;
+  margin-left: 10px;
+}
+    
+.item3 { 
+  align-self:flex-start;
+}
+
+.version {
+  color: #decc80;
+}
+
+  @media(max-width: 500px){
+    .footer{
+      height: auto;
+    }
+    .flex-container{
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  } 
+
+ 

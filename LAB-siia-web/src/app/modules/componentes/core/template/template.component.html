@@ -1,0 +1,121 @@
+<!-- menu lenguaje -->
+<mat-menu #languaje="matMenu">
+    <mat-option value="es" (click)="changeLang('es')">{{ 'template.header.idiomaEspañol' | translate }}</mat-option>
+    <mat-option value="en" (click)="changeLang('en')">{{ 'template.header.idiomaIngles' | translate }}</mat-option>
+    <mat-option value="jp" (click)="changeLang('jp')" *ngIf="false">JAP</mat-option>
+</mat-menu>
+<!-- cabecera -->
+<div class="background">
+    <img src="https://uatx.mx/siia/home/LogoSIIA5.png" class="img-responsive" style="max-width: 350px;">
+    <div class="imageBack"></div>
+    <div class="centrado" *ngIf="!esDispositivoMovil">
+
+        <ng-container *ngIf="this._loginUsuarioService.obtenerToken()">
+
+            <button mat-icon-button [matMenuTriggerFor]="languaje">
+                <mat-icon>language</mat-icon>
+            </button>
+
+            <a mat-button [matMenuTriggerFor]="menu">
+                <mat-icon color="secondary">account_circle</mat-icon>
+
+                {{this._loginUsuarioService.obtenerNombreCompleto()}}
+                <mat-icon color="secondary">arrow_drop_down</mat-icon>
+            </a>
+
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item (click)="CerrarSesion()">
+                    <mat-icon>logout</mat-icon>
+                    <span>{{ 'template.header.salir' | translate }}</span>
+                </button>
+            </mat-menu>
+
+        </ng-container>
+
+        <!-- cabecera para usuarios no logueados -->
+        <ng-container *ngIf="!this._loginUsuarioService.obtenerToken()">
+
+            <button mat-icon-button [matMenuTriggerFor]="languaje">
+                <mat-icon class="mat-18">language</mat-icon>
+            </button>
+
+            <ng-container>
+                <button mat-button (click)="click_iniciarSesion()">
+                    <mat-icon>login</mat-icon> {{ 'template.header.iniciarSesion'| translate }}
+                </button>
+            </ng-container>
+        </ng-container>
+    </div>
+</div>
+
+<mat-toolbar [style]="esDispositivoMovil? '':'justify-content: center; height: 35px;'">
+    <ng-container *ngIf="this.esDispositivoMovil">
+        <button mat-icon-button (click)="sidenav.toggle()">
+            <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
+            <mat-icon *ngIf="sidenav.opened">close</mat-icon>
+        </button>
+    </ng-container>
+
+    <ng-container *ngIf="!esDispositivoMovil && _loginUsuarioService.obtenerToken()">
+        <button mat-button class="navButton" [style]="" [routerLink]="['/inicio']"
+            (click)="bindSelected(0,0)">Inicio</button>
+    </ng-container>
+
+    <ng-container *ngIf="!esDispositivoMovil && _loginUsuarioService.obtenerToken()">
+        <button mat-button class="navButton" [style]="" [routerLink]="['/notificaciones']"
+            (click)="bindSelected(1,0)">Administrar notificaciones</button>
+    </ng-container>
+
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav" mode="over" align="start" style="height: 90%; width: 90%;">
+
+        <ng-container *ngIf="this._loginUsuarioService.obtenerToken()">
+            <h4 class="name">{{this._loginUsuarioService.obtenerNombreCompleto()}}</h4>
+
+            <mat-divider></mat-divider>
+
+            <button mat-menu-item class="menu-button" (click)="closeMenu()" [routerLink]="['/inicio']">
+                <mat-icon>home</mat-icon>
+                <span class="boton-primario">Inicio</span>
+            </button>
+
+            <mat-divider></mat-divider>
+
+            <button mat-menu-item class="menu-button" [matMenuTriggerFor]="languaje">
+                <mat-icon>language</mat-icon>
+                <span class="boton-primario">{{ 'template.header.elegirIdioma' | translate }}</span>
+            </button>
+
+            <mat-divider></mat-divider>
+
+            <button mat-menu-item class="menu-button" (click)="CerrarSesion()" routerLink="/login">
+                <mat-icon>logout</mat-icon>
+                <span class="boton-primario">{{ 'template.header.salir' | translate }}</span>
+            </button>
+        </ng-container>
+
+        <!-- menu para usuarios no logueados -->
+        <ng-container *ngIf="!this._loginUsuarioService.obtenerToken()">
+
+            <button mat-menu-item class="menu-button" (click)="click_iniciarSesion()">
+                <mat-icon>login</mat-icon>
+                <span class="boton-primario">{{ 'template.header.iniciarSesion' | translate }}</span>
+            </button>
+
+            <mat-divider></mat-divider>
+
+            <button mat-menu-item class="menu-button" [matMenuTriggerFor]="languaje">
+                <mat-icon>language</mat-icon>
+                <span class="boton-primario">{{ 'template.header.elegirIdioma' | translate }}</span>
+            </button>
+        </ng-container>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="body">
+            <router-outlet></router-outlet>
+        </div>
+        <app-pie-pagina></app-pie-pagina>
+    </mat-sidenav-content>
+</mat-sidenav-container>

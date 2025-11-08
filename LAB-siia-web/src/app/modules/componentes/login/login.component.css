@@ -1,0 +1,58 @@
+.log {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-content: center;
+  margin-top: 1rem;
+  max-width: 1500px;
+}
+
+a {
+  text-decoration: none;
+  color: firebrick;
+}
+
+.mat-form-field {
+  width: 90%;
+  padding-top: 10%;
+}
+
+.logContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1);
+}
+
+.store-buttons{
+  display: flex; 
+  justify-content: flex-end; 
+  margin-top: 10px;
+}
+
+.button-store{
+  margin: 5px 5px 5px 5px;
+}
+
+@media (max-width: 884px) {
+  .log {
+    display: block;
+  }
+  .logContainer {
+    display: block;
+    width: 100%;
+  }
+  .mat-form-field {
+    width: 90%;
+  }
+  .store-buttons{
+    display: grid;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .button-store{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+}
