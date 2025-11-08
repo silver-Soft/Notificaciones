@@ -219,8 +219,15 @@ export class AdminNotificacionesComponent {
   //Temas ya existentes en FCM de prueba
   topics = [
     {
-      targetTopic: "test_notificaciones",
+      targetTopic: "test_mis",
       topic: "Integrantes de la MIS"
+    },
+    {
+      targetTopic: "test_notificaciones",
+      topic: "Canal de Notificaciones de Prueba"
+    },{
+      targetTopic: "canal_desarrollo",
+      topic: "Canal de Desarrollo"
     }
   ];
 
