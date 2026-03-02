@@ -5,7 +5,7 @@ export class AppSettings {
     public static env ="https://siia5"
     public static API_ENDPOINT = AppSettings.env+'.uatx.mx:8743';
     public static API_ENDPOINT_AVISOS= AppSettings.env+'.uatx.mx:8743/siia-back-avisos-0.0.1-SNAPSHOT'
-    public static API_ENDPOINT_FCM = 'http://localhost:8080';
+    public static API_ENDPOINT_FCM = 'https://siia-fcm-service-495517142799.us-central1.run.app/';//http://localhost:8080
 
     public static TITLE = 'SIIA 5';
     public static SLOGAN = 'Sistema integral de información administrativa';
